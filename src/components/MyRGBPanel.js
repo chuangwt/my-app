@@ -29,7 +29,7 @@ function MyRGBPanel() {
 
         
         <div style={{
-                backgroundColor: `rgb(${red}, ${green}, ${blue})`,
+                backgroundColor: `rgb(${r}, ${g}, ${b})`,
 
                 width:"200px", 
                 height:"100px",
