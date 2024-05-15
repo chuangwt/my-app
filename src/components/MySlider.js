@@ -1,7 +1,7 @@
 import { useState } from "react";
-function MySlider(label, onChange) {
+function MySlider({label,onChange}) {
    const [value,setValue]=useState(0);
-   const handleSilderChange =(e)=>{
+   const handleChange =(e)=>{
     setValue(e.target.value)
     if(onChange){
         onChange(e.target.value)
@@ -16,7 +16,7 @@ function MySlider(label, onChange) {
             min="0" 
             max="255" 
             value={value} 
-            onChange={handleSilderChange}/>
+            onChange={handleChange}/>
             <span>{value}</span>
         </div>
            
