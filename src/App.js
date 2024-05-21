@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1>Hello React! 2024.5.16</h1>
+        <h2>4B0G0178 莊惟婷</h2>
         <h2>MyRGBPanel</h2>
         <MyRGBPanel />
         <h2>MyCalculator</h2>
