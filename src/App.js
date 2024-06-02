@@ -7,6 +7,7 @@ import TicTacToe from "./components/tic-tac-toe/TicTacToe";
 function App() {
   return (
     <div className="App">
+      <h1>4B0G0178 莊惟婷</h1>
       <h1>MySlider</h1>
       <MySlider />
       <h1>MyRGBPanel</h1>
