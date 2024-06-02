@@ -1,6 +1,6 @@
 .App {
-  background-color: aqua;
   text-align: center;
+  background-color: rgb(102, 163, 163);
 }
 
 .App-logo {
@@ -15,8 +15,8 @@
 }
 
 .App-header {
-  background-color: #35b2d1;
-  min-height: 100vh;
+  background-color: blueviolet;
+  min-height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -33,6 +33,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
