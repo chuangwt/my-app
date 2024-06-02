@@ -3,39 +3,46 @@ import { useState } from "react";
 import MySlider from "./MySlider";
 
 function MyRGBPanel() {
-  const panelCSS = {
-    display: "flex",
-    flexDirection: "column",
-    border: "1px solid black",
-    borderRadius: "10px",
-    width: "300px",
-    padding: "30px",
-    alignItems: "center",
-    margin: "auto",
-    justifyContent: "center",
-  };
-  const [r, setR] = useState(128);
-  const [g, setG] = useState(128);
-  const [b, setB] = useState(128);
+    const [r, setR] = useState(128);
+    const [g, setG] = useState(128);
+    const [b, setB] = useState(128);
 
-  const updateR = (c) => setR(c);
-  const updateG = (c) => setG(c);
-  const updateB = (c) => setB(c);
+    const updateR = (v) => setR(v);
+    const updateG = (v) => setG(v);
+    const updateB = (v) => setB(v);
 
+    const rgbCss = {
+        border: "1px solid blue",
+        borderRadius: "20px",
+        width: "300px",
+        display: "flex",
+        flexDirection: "column",
+        padding: "20px",
+        justifyContent: "center",
+        alignItems: "center",
+        margin: "auto",
+      };
   return (
     <>
-      <div style={panelCSS}>
-        <h3>MyRGBPanel元件</h3>
+      <div
+        style={rgbCss}
+      >
+        <h2 style={{color: "red"}}>
+          目前色彩
+        </h2>
         <div
           style={{
-            backgroundColor: `rgb(${r}, ${g}, ${b})`,
-            width: "200px",
+            width: "250px",
             height: "100px",
+            backgroundColor: `rgb(${r}, ${g}, ${b})`,
           }}
         />
-        <MySlider label="RED" onChange={updateR} />
-        <MySlider label="GREEN" onChange={updateG} />
-        <MySlider label="BLUE" onChange={updateB} />
+        <span>R: </span>
+        <MySlider onChange={updateR} />
+        <span>G: </span>
+        <MySlider onChange={updateG} />
+        <span>B: </span>
+        <MySlider onChange={updateB} />
       </div>
     </>
   );
